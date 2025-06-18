@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Puzzle.loader.js";
+      var loaderUrl = buildUrl + "/f4acf4826692f2eab07796912cc1099d.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Puzzle.data.unityweb",
-        frameworkUrl: buildUrl + "/Puzzle.framework.js.unityweb",
-        codeUrl: buildUrl + "/Puzzle.wasm.unityweb",
+        dataUrl: buildUrl + "/d52ae56163d839a54273e056ddbef1c0.data.unityweb?v=1750264521",
+        frameworkUrl: buildUrl + "/6a7cb7a09810a49861fc1c697f071c24.framework.js.unityweb?v=1750264521",
+        codeUrl: buildUrl + "/bb83fc9a0384d6801a61de4eb7154e42.wasm.unityweb?v=1750264521",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Puzzle",
         productName: "Puzzle",
@@ -102,13 +102,13 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/Puzzle.jpg') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/e898b87b5ed39a25164c76e89d62c486.jpg') center / cover";
       document.querySelector("#unity-loading-bar").style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
+        createUnityInstance(canvas, config, 'v=1750264521', (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
