@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/f4acf4826692f2eab07796912cc1099d.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/d52ae56163d839a54273e056ddbef1c0.data.unityweb?v=1750264521",
-        frameworkUrl: buildUrl + "/6a7cb7a09810a49861fc1c697f071c24.framework.js.unityweb?v=1750264521",
-        codeUrl: buildUrl + "/bb83fc9a0384d6801a61de4eb7154e42.wasm.unityweb?v=1750264521",
+        dataUrl: buildUrl + "/a2f38c10370933184688180877f7d18a.data.unityweb",
+        frameworkUrl: buildUrl + "/6a7cb7a09810a49861fc1c697f071c24.framework.js.unityweb",
+        codeUrl: buildUrl + "/bb83fc9a0384d6801a61de4eb7154e42.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Puzzle",
         productName: "Puzzle",
@@ -108,7 +108,7 @@
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        createUnityInstance(canvas, config, 'v=1750264521', (progress) => {
+        createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
